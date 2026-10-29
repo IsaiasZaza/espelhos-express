@@ -256,22 +256,32 @@ address { font-style: normal; }
 @media (max-width: 900px) {
   .top__nav { display: none; }
   .top .btn { margin-left: auto; }
-  .anos__inner { grid-template-columns: 1fr; }
-  .anos__title { padding-bottom: 0; }
-  .anos__mirror { width: 7.5rem; margin-top: 1rem; }
+  /* título em cima; texto à esquerda e espelho em pé à direita, apoiado na borda da faixa */
+  .anos__inner { grid-template-columns: minmax(0, 1fr) 7rem; gap: 1.6rem 1.4rem; }
+  .anos__title { grid-column: 1 / -1; padding-bottom: 0; }
+  .anos__mirror { grid-column: 2; grid-row: 2; width: 100%; }
   .sheet__cols { grid-template-columns: 1fr; }
   .way, .way + .way { padding: 1.6rem 0 0; border-left: 0; }
   .way + .way { margin-top: 1.6rem; border-top: 2px dashed rgba(12, 201, 231, .45); }
 }
 @media (max-width: 720px) {
-  /* a fila ocupa o que sobra da primeira tela: título + texto + botões + nota ≈ 500px */
-  .hero { --R: clamp(220px, calc(100svh - 500px), 420px); --floor: 40px; }
-  .hero__copy { padding: 5rem var(--pad) 1.2rem; }
-  .hero__title { font-size: clamp(2rem, 9.5vw, 2.6rem); }
-  .hero__lead { margin-top: 1rem; font-size: 1rem; }
-  .hero__actions { margin-top: 1.1rem; gap: .6rem; }
-  .hero__actions .btn { flex: 1 1 auto; font-size: .72rem; padding-inline: 1rem; }
-  .hero__note { margin-top: .8rem; font-size: .8rem; }
+  /* a fila ocupa o que sobra da primeira tela: texto (≈424px) + chão (44px) */
+  .hero { --R: clamp(240px, calc(100svh - 470px), 430px); --floor: 44px; }
+  .hero__copy { padding: 5rem var(--pad) 1.4rem; }
+  .hero__title { font-size: clamp(2.5rem, 12.6vw, 3.5rem); }
+  .hero__lead { margin-top: 1rem; font-size: 1.02rem; }
+  .hero__actions { margin-top: 1.2rem; gap: .5rem; flex-wrap: nowrap; }
+  .hero__actions .btn { font-size: .68rem; padding-inline: .8rem; letter-spacing: .02em; }
+  .hero__actions .btn--red { flex: 1 1 60%; }
+  .hero__actions .btn--ghost { flex: 0 0 auto; }
+  .hero__actions .ico { display: none; }
+  .hero__note { margin-top: .9rem; font-size: .8rem; }
+  /* peças mais altas: o chão e o reflexo ganham presença */
+  .unit--pill  { height: 58%; }
+  .unit--rect  { height: 68%; }
+  .unit--oval  { height: 76%; }
+  .unit--round { height: 82%; }
+  .unit--pill .tag { font-size: .58rem; letter-spacing: .04em; padding-inline: .4rem; }
   .rack { position: relative; margin-top: auto; flex: none; justify-content: flex-start; overflow: auto hidden; overscroll-behavior-x: contain; scroll-snap-type: x proximity; scroll-padding-inline: var(--pad); scrollbar-width: none; }
   .rack::before { display: none; }
   .rack::-webkit-scrollbar { display: none; }
@@ -280,6 +290,12 @@ address { font-style: normal; }
   .unit--arch { order: -2; }
   .unit--round { order: -1; }
   .btn--sm { padding-inline: .8rem; }
+  .sheet { padding: 1.6rem 1.3rem; }
+  .sheet__head { padding-bottom: 1rem; }
+  .sheet__head h2 { font-size: 1.6rem; max-width: none; }
+  .way, .way + .way { gap: 1.1rem; padding-top: 1.3rem; }
+  .fields { gap: .7rem; }
+  .field dd { font-size: 1.02rem; }
   .label { transform: none; }
   .label__brand { padding-right: 0; padding-top: 3.2rem; }
 }
