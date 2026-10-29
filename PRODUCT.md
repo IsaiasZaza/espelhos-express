@@ -12,7 +12,7 @@ static HTML/CSS/JS (delegated: o pedido era "fazer outro site"; escolhido HTML e
 
 ## Users
 
-Moradores e profissionais do DF (moradores de casa/apartamento, arquitetos, construtoras, marceneiros) que precisam de espelho agora: banheiro, sala, closet, projeto. Chegam pelo Instagram e vão à loja em Vicente Pires ou pedem entrega. O job do site: provar que há espelho pronto na loja e levar a pessoa ao Instagram/DM ou à loja. (Inferido do perfil; não confirmado com o cliente.)
+Moradores e profissionais do DF (moradores de casa/apartamento, arquitetos, construtoras, marceneiros) que precisam de espelho agora: banheiro, sala, closet, projeto. Chegam pelo Instagram e vão à loja em Vicente Pires ou pedem entrega. O job do site: provar que há espelho pronto na loja e levar a pessoa ao Instagram/DM ou à loja. (Inferido do perfil do Instagram; público confirmado pelo responsável do projeto em 2026-10-29. Ainda não validado diretamente com o dono da loja.)
 
 ## Product Purpose
 
@@ -43,6 +43,8 @@ Loja física: Vicente Pires, rua 3, chácara 84b, Brasília-DF. Canal público c
 ## Evidence on Hand
 
 - Bio do Instagram (acima), endereço de Vicente Pires, ~11 mil seguidores.
+- Código do site: https://github.com/IsaiasZaza/espelhos-express (branch `main`). Ainda sem endereço público publicado.
+- Revisado em 2026-10-29: WhatsApp/telefone, horário, preços e fotos reais continuam não fornecidos.
 - Ausências a respeitar: sem fotos do cliente no repositório; sem depoimentos; sem preços; sem horário. Não fabricar.
 
 ## Product Principles
